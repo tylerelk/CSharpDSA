@@ -3,22 +3,20 @@
 using CSharp_DSA.Algorithms;
 using CSharp_DSA.DataStructures;
 
-LinkedList linkedList = new(new Node(3));
+Node node1 = new Node(1);
+Node node2 = new Node(2);
+Node node3 = new Node(3);
+Node node4 = new Node(4);
+Node node5 = new Node(5);
 
-linkedList.InsertAtHead(2);
-linkedList.InsertAtHead(1);
+Stack stack = new();
 
-linkedList.InsertAtTail(4);
-linkedList.InsertAtTail(5);
-linkedList.InsertAtTail(6);
+stack.Push(node1);
+stack.Push(node2);
+stack.Push(node3);
+stack.Push(node4);
+stack.Push(node5);
 
-linkedList.InsertAfter("Inserted after", 4);
+stack.Pop();
 
-linkedList.UpdateNode("Inserted after", "Inserted after and edited");
-linkedList.UpdateNode(6, 9);
-
-linkedList.DeleteNode(1);
-linkedList.DeleteNode(4);
-linkedList.DeleteNode(9);
-
-linkedList.Print();
+stack.Print();
