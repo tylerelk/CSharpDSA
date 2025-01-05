@@ -14,4 +14,11 @@ linkedList.InsertAtTail(6);
 
 linkedList.InsertAfter("Inserted after", 4);
 
+linkedList.UpdateNode("Inserted after", "Inserted after and edited");
+linkedList.UpdateNode(6, 9);
+
+linkedList.DeleteNode(1);
+linkedList.DeleteNode(4);
+linkedList.DeleteNode(9);
+
 linkedList.Print();

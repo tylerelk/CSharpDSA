@@ -12,3 +12,4 @@
 /Users/tyler/Documents/Repos/CSharp DSA/CSharp DSA/obj/Debug/net9.0/CSharp DSA.pdb
 /Users/tyler/Documents/Repos/CSharp DSA/CSharp DSA/obj/Debug/net9.0/CSharp DSA.genruntimeconfig.cache
 /Users/tyler/Documents/Repos/CSharp DSA/CSharp DSA/obj/Debug/net9.0/ref/CSharp DSA.dll
+/Users/tyler/Documents/Repos/CSharp DSA/CSharp DSA/obj/Debug/net9.0/CSharp DSA.sourcelink.json

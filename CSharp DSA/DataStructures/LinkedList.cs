@@ -62,4 +62,40 @@ public class LinkedList
             }
         }
     }
+
+    public void UpdateNode(dynamic term, dynamic value)
+    {
+        Node current = Head;
+        while (current != null)
+        {
+            if (current.Value.GetType() == term.GetType() && current.Value == term)
+            {
+                current.Value = value;
+                Console.WriteLine($"Value {term} updated to {value}");
+                return;
+            }
+            current = current.NextNode;
+        }
+        Console.WriteLine($"Search term {term} was not found");
+    }
+
+    public void DeleteNode(dynamic term)
+    {
+        Node current = Head;
+        while (current != null)
+        {
+            if (current.Value.GetType() == term.GetType() && current.Value == term)
+            {
+                if (current.PreviousNode != null) current.PreviousNode.NextNode = current.NextNode;
+                if (current.NextNode != null) current.NextNode.PreviousNode = current.PreviousNode;
+                if (Head == current) Head = current.NextNode;
+                if (Tail == current) Tail = current.PreviousNode;
+                Console.WriteLine($"Value {term} deleted successfully");
+                Length--;
+                return;
+            }
+            current = current.NextNode;
+        }
+        Console.WriteLine($"{term} was not found");
+    }
 }
